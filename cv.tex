@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+% Modified for personal use by Mike Watson (mchlrhw)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Mike}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Watson}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Senior Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{York, UK}\\
+	\icon{Laptop}{12}{8+ years experience}\\
+	% \icon{At}{12}{\href{mailto:alyx@vance.me}{alyx@vance.me}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Github}{12}{\href{https://github.com/mchlrhw}{github.com/mchlrhw}}\\
+	\icon{MortarBoard}{12}{MSc}\\
+	% \icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{About Me}
+
+	I am a backend software engineer with a strong ability to learn and adapt to new problem domains.
+	I am a great believer in small, incremental change; continuous integration and deployment; and simple, composable tools and services.
+	My programming language of choice is Rust; I prefer to use Vim and CLI tools over an IDE; and I am most at home implementing RESTful services, or writing client code to glue services together.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+	    % Languages
+		\baritem{Rust}{100}
+		\baritem{Python}{80}
+		\baritem{Go}{50}
+		% \baritem{Bash}{60}
+		% Query
+		\baritem{SQL}{70}
+		% \baritem{graphQL}{50}
+		% Platform
+		\baritem{Linux}{60}
+		\baritem{AWS}{70}
+		% \baritem{GCP}{50}
+		\baritem{Terraform}{80}
+		% Containers
+		\baritem{Docker}{70}
+		\baritem{K8s}{30}
+	    % VCS
+		\baritem{Git}{80}
+	\end{barchart}
+\end{minipage}
+
+% \begin{center}
+% 	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
+% \end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2021-07 -- present}
+		{Senior Software Engineer}
+		{Anaplan inc.}
+		{Promoted to Senior after demonstrating an ability to build and maintain reliable systems, as well as an ability to architect innovative automation solutions, particularly in the area of ChatOps.\\
+		\texttt{Rust}\slashsep\texttt{AWS}\slashsep\texttt{MySQL}\slashsep\texttt{graphQL}\slashsep\texttt{Terraform}}
+	\entry
+		{2020-03 -- 2021-07}
+		{Software Engineer}
+		{Anaplan inc.}
+		{Development and operation of internal services to improve the time-to-value of other development teams.\\
+		\texttt{Python}\slashsep\texttt{Rust}\slashsep\texttt{AWS}\slashsep\texttt{TypeScript}}
+	\entry
+		{2019-12 -- 2020-03}
+		{Senior Software Engineer}
+		{ecobee inc.}
+		{Short stint as Senior just before leaving to join Anaplan. Promoted after demonstrating an ability to collaborate well with other teams across the organisation.\\
+		\texttt{Go}\slashsep\texttt{Python}\slashsep\texttt{GCP}}
+	\entry
+		{2018-10 -- 2019-12}
+		{Software Engineer}
+		{ecobee inc.}
+		{IoT camera device software development, as well as the backend services required for storage and processing of video and audio.\\
+		\texttt{Go}\slashsep\texttt{Python}\slashsep\texttt{GCP}}
+	\entry
+		{2016-01 -- 2018-10}
+		{Software Engineer}
+		{Cocoon Labs ltd.}
+		{Responsible for the implementation and maintenance of backend services, including provisioning and operating the cloud infrastructure backing them.\\
+		\texttt{Python}\slashsep\texttt{Go}\slashsep\texttt{AWS}\slashsep\texttt{postgreSQL}}
+	\entry
+		{2014-10 -- 2016-01}
+		{System Administrator}
+		{Exa Networks ltd.}
+		{Initially working with email and content filtering services. Later moved to a Python developer role.\\
+		\texttt{Linux}\slashsep\texttt{Ansible}\slashsep\texttt{Python}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2011 -- 2014}
+		{PhD (all but dissertation)}
+		{Lancaster University}
+		{Research into malware detection through machine learning in cloud computing environments, particularly at the hypervisor level.}
+	\entry
+		{2009 -- 2010}
+		{MSc Networking and Internet Systems}
+		{Lancaster University}
+		{Subjects of note include: network security; cryptography; protocol design; and wireless sensor node operating systems}
+	\entry
+		{2006 -- 2009}
+		{BSc Physics}
+		{Lancaster University}
+		{Software simulation of physical systems was a particular highlight and prompted me to persue computing as a career.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% \begin{minipage}[t]{0.3\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+% 	\cvsect{Languages}
+	
+% 	\textbf{English} - native\\
+% 	\textbf{German} - proficient\\
+% 	\textbf{Polish} - rudimentary
+% \end{minipage}
+% \hfill
+% \begin{minipage}[t]{0.3\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+% 	\cvsect{Hobbies}
+	
+% 	I love... \lorem
+% \end{minipage}
+% \hfill
+% \begin{minipage}[t]{0.3\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+% 	\cvsect{Non profit}
+	
+% 	I help... \lorem
+% \end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
